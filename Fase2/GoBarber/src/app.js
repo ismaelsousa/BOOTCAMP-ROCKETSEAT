@@ -1,5 +1,7 @@
 import express from 'express';
 import routes from './routes';
+// Chama o arq index.js e já roda automáticamente
+import './database';
 
 class App {
   constructor() {
