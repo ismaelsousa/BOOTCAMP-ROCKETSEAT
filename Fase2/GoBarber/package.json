@@ -13,7 +13,8 @@
     "mysql": "^2.17.1",
     "mysql2": "^1.6.5",
     "sequelize": "^5.15.2",
-    "sucrase": "^3.10.1"
+    "sucrase": "^3.10.1",
+    "yup": "^0.27.0"
   },
   "devDependencies": {
     "eslint": "^6.2.1",
