@@ -24,6 +24,18 @@ class NotificationController {
       .limit(20);
     return res.json(notifications);
   }
+
+  async update(req, res) {
+    // const notifications = await Notification.findById(req.params.id);
+
+    const notification = await Notification.findByIdAndUpdate(
+      req.params.id,
+      { read: true },
+      // Depois de atualizar ele retorna atualizadas
+      { new: true }
+    );
+    return res.json(notification);
+  }
 }
 
 export default new NotificationController();
