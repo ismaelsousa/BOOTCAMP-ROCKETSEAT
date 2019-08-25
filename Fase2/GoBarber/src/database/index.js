@@ -1,4 +1,5 @@
 import Sequelize from 'sequelize';
+import mongoose from 'mongoose';
 
 // importa às config da conexao
 import databaseConfig from '../config/database';
@@ -13,6 +14,7 @@ const models = [User, File, Appointment];
 class Database {
   constructor() {
     this.init();
+    this.mongo();
   }
 
   init() {
@@ -22,6 +24,17 @@ class Database {
       .map(model => model.init(this.connection))
       // Chama o método assiciate caso exista passando todos os models
       .map(model => model.associate && model.associate(this.connection.models));
+  }
+
+  mongo() {
+    this.mongoConnection = mongoose.connect(
+      'mongodb+srv://ismael:senha@nodecluster-imcru.mongodb.net/gobarber?retryWrites=true&w=majority',
+      // userFindAndModify é uma configuração para quando tiver procurando e modificando
+      { useNewUrlParser: true, useFindAndModify: true },
+      () => {
+        console.log('MongoDB connected');
+      }
+    );
   }
 }
 
