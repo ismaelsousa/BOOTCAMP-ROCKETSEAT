@@ -44,7 +44,7 @@ class AppointmentController {
     const { provider_id, date } = req.body;
 
     /**
-     * check if provider_is is a provider
+     * check if provider_id is a provider
      */
 
     const isProvider = await User.findOne({
