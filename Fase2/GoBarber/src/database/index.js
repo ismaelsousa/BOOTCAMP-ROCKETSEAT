@@ -28,7 +28,7 @@ class Database {
 
   mongo() {
     this.mongoConnection = mongoose.connect(
-      'mongodb+srv://ismael:senha@nodecluster-imcru.mongodb.net/gobarber?retryWrites=true&w=majority',
+      process.env.MONGO_URL,
       // userFindAndModify é uma configuração para quando tiver procurando e modificando
       { useNewUrlParser: true, useFindAndModify: true },
       () => {
