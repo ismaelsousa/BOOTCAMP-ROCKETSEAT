@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @babel/plugin-proposal-class-proterties -D
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add props-types
 
 PATH: 
   C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\GtkSharp\2.12\bin;F:\android\platform-tools;F:\android\tools;C:\Users\ismae\AppData\Local\Microsoft\WindowsApps;C:\Users\ismae\AppData\Roaming\npm;C:\Users\ismae\AppData\Local\Yarn\bin;C:\Users\ismae\AppData\Local\GitHubDesktop\bin;C:\Users\ismae\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\swipl\bin
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@babel%2fplugin-proposal-class-proterties: Not found
+  Error: https://registry.yarnpkg.com/props-types: Not found
       at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:65200:18)
       at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:129590:22)
       at Request.emit (events.js:198:13)
@@ -38,6 +38,7 @@ npm manifest:
     },
     "devDependencies": {
       "@babel/core": "^7.5.5",
+      "@babel/plugin-proposal-class-properties": "^7.5.5",
       "@babel/preset-env": "^7.5.5",
       "@babel/preset-react": "^7.0.0",
       "babel-loader": "^8.0.6",
@@ -131,6 +132,18 @@ Lockfile:
       "@babel/helper-hoist-variables" "^7.4.4"
       "@babel/traverse" "^7.4.4"
       "@babel/types" "^7.4.4"
+  
+  "@babel/helper-create-class-features-plugin@^7.5.5":
+    version "7.5.5"
+    resolved "https://registry.yarnpkg.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.5.5.tgz#401f302c8ddbc0edd36f7c6b2887d8fa1122e5a4"
+    integrity sha512-ZsxkyYiRA7Bg+ZTRpPvB6AbOFKTFFK4LrvTet8lInm0V468MWCaSYJE+I7v2z2r8KNLtYiV+K5kTCnR7dvyZjg==
+    dependencies:
+      "@babel/helper-function-name" "^7.1.0"
+      "@babel/helper-member-expression-to-functions" "^7.5.5"
+      "@babel/helper-optimise-call-expression" "^7.0.0"
+      "@babel/helper-plugin-utils" "^7.0.0"
+      "@babel/helper-replace-supers" "^7.5.5"
+      "@babel/helper-split-export-declaration" "^7.4.4"
   
   "@babel/helper-define-map@^7.5.5":
     version "7.5.5"
@@ -294,6 +307,14 @@ Lockfile:
       "@babel/helper-plugin-utils" "^7.0.0"
       "@babel/helper-remap-async-to-generator" "^7.1.0"
       "@babel/plugin-syntax-async-generators" "^7.2.0"
+  
+  "@babel/plugin-proposal-class-properties@^7.5.5":
+    version "7.5.5"
+    resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.5.5.tgz#a974cfae1e37c3110e71f3c6a2e48b8e71958cd4"
+    integrity sha512-AF79FsnWFxjlaosgdi421vmYG6/jg79bVD0dpD44QdgobzHKuLZ6S3vl8la9qIeSwGi8i1fS0O1mfuDAAdo1/A==
+    dependencies:
+      "@babel/helper-create-class-features-plugin" "^7.5.5"
+      "@babel/helper-plugin-utils" "^7.0.0"
   
   "@babel/plugin-proposal-dynamic-import@^7.5.0":
     version "7.5.0"
