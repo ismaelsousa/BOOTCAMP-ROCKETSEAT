@@ -6,6 +6,7 @@ import {
   StyleSheet,
   View,
   Text,
+  StatusBar
 } from 'react-native';
 
 
@@ -22,7 +23,10 @@ const styles = StyleSheet.create({
 
 const App = ()=>{
   return (
-    <Routes />
+    <>
+      <StatusBar barStyle='light-content' backgroundColor='#7159c1'/>
+      <Routes />
+    </>
   );
 };
 

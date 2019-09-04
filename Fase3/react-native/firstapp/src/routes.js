@@ -5,7 +5,7 @@ import User from './pages/User'
 const Routes = createAppContainer(
   createStackNavigator({
     Main,
-    Userk
+    User
   },{
     headerLayoutPreset: 'center',
     headerBackTitleVisible: false,
