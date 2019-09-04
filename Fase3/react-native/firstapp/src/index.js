@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './config/ReactotronConfig'
+import Routes from './routes'
 import {
   StyleSheet,
   View,
@@ -20,16 +21,8 @@ const styles = StyleSheet.create({
 });
 
 const App = ()=>{
-
-
-  console.tron.log('ai');
   return (
-    <View style={styles.body}>
-      <View style={styles.sectionContainer}>
-        <Text style={styles.sectionTitle}>Bora codar!</Text>
-        <Text style={styles.sectionTitle}>E ai</Text>
-      </View>
-    </View>
+    <Routes />
   );
 };
 
