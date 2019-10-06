@@ -1,0 +1,66 @@
+html, body, #app{
+  height: 100%;
+  margin: 0;
+}
+#app{  
+  display: flex;
+  flex-direction: row;
+  /* Quando usa o flex row */
+  /* align-items alinha o conteudo verticalmente*/
+  /* já o justify-contente alinha horizontalmente*/
+  /*align-items: center ;*/
+  /* 
+    No justify tem as opções especiais
+    space-between
+    space-around é igual ao between, 
+    porém ele coloca espaco no começo e fim
+
+  */
+  /*justify-content: space-evenly;*/
+
+  /*
+    Quebra de linha 
+    Também podemos usar o reverse 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    */
+
+  /* Usado para quando os elementos estão em mais de uma linha quebrada*/
+  /* align-content: center; */
+
+}
+
+.box{
+  width: 200px;
+  height: 60px;
+  background: #f00;
+  margin: 5px;
+
+  /*
+    Flex-grow permite os componente esticar
+    flex-grow: 1;
+  */
+  /*
+    flex-shrink diz se o componente pode se espremer
+    flex-shrink: 1;
+  */
+  /*
+    flex é a soma do grow e shrink
+    flex 1 espreme e espande
+    flex: 1;
+  */
+}
+.red{
+  order: 1;
+}
+
+.green{
+  background: #0f0;
+  order:2;
+}
+
+.blue{
+  background: #00f;
+  order:0;
+}

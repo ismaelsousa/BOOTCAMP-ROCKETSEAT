@@ -4,14 +4,17 @@ import User from '../models/User';
 
 class UserController {
   async store(req, res) {
-
     const schema = Yup.object().shape({
       name: Yup.string().required(),
-      email: Yup.string().email().required(),
-      password: Yup.string().required().min(6),
-    })
+      email: Yup.string()
+        .email()
+        .required(),
+      password: Yup.string()
+        .required()
+        .min(6),
+    });
     // Verificando se os dados estão corretos de acordo com o esquema
-    if(!(await schema.isValid(req.body))){
+    if (!(await schema.isValid(req.body))) {
       return res.status(400).json({ error: 'Validation fails' });
     }
 
@@ -30,7 +33,6 @@ class UserController {
   }
 
   async update(req, res) {
-
     const schema = Yup.object().shape({
       name: Yup.string(),
       email: Yup.string().email(),
@@ -43,12 +45,12 @@ class UserController {
           oldPassword ? field.required() : field
         ),
       // Quando o password estiver preenchido o confirm tem que ser igual
-      confirmPassword:Yup.string().when('password', (password, field)=>
+      confirmPassword: Yup.string().when('password', (password, field) =>
         password ? field.required().oneOf([Yup.ref('password')]) : field
-      )
-    })
+      ),
+    });
     // Verificando se os dados estão corretos de acordo com o esquema
-    if(!(await schema.isValid(req.body))){
+    if (!(await schema.isValid(req.body))) {
       return res.status(400).json({ error: 'Validation fails' });
     }
     const { email, oldPassword } = req.body;
