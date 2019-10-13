@@ -24,6 +24,8 @@
     "mysql2": "^1.6.5",
     "nodemailer": "^6.3.0",
     "nodemailer-express-handlebars": "^3.1.0",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
     "sequelize": "^5.15.2",
     "sucrase": "^3.10.1",
     "youch": "^2.0.10",
