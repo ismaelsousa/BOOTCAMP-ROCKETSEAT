@@ -19,3 +19,6 @@ docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
 pegando uma hora para conseguir ver o horários disponiveis
 new Date().getTime()
 1577109919478
+
+---------------------------
+docker start b69189bd91ab

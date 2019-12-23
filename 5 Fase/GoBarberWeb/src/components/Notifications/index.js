@@ -2,9 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { parseISO, formatDistance } from 'date-fns';
 import pt from 'date-fns/locale/pt';
 
-
-
-import {MdNotifications } from 'react-icons/md'
+import { MdNotifications } from 'react-icons/md';
 import api from '~/services/api';
 import {
   Container,

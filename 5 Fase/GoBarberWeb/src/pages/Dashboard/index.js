@@ -1,9 +1,20 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { format, subDays, addDays, setHours,setMinutes, setSeconds, isBefore, isEqual, parseISO } from 'date-fns';
+import {
+  format,
+  subDays,
+  addDays,
+  setHours,
+  setMinutes,
+  setSeconds,
+  getHours,
+  isBefore,
+  isEqual,
+  parseISO,
+} from 'date-fns';
 import pt from 'date-fns/locale/pt';
-import {utcToZonedTime} from 'date-fns-tz'
+import { utcToZonedTime } from 'date-fns-tz';
 
-import { MdChevronLeft, MdChevronRight} from 'react-icons/md';
+import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import api from '~/services/api';
 import { Container, Time } from './styles';
 
@@ -18,27 +29,32 @@ export default function Dashboard() {
     [date]
   );
 
-  useEffect(()=>{
-    async function loadSchedule(){
-      const response  = await api.get('schedule', {
-        params: {date}
-      })
-      const timezone = Intl.DateTimeFormat().resolvedOptions().timezone
-      const data = range.map(hour => {
-        const checkDate = setSeconds(setMinutes(setHours(date, hour),0),0);
+  useEffect(() => {
+    async function loadSchedule() {
+      const response = await api.get('schedule', {
+        params: { date },
+      });
 
-        const compareDate = utcToZonedTime(checkDate, timezone);
+      const { timeZone } = Intl.DateTimeFormat().resolvedOptions();
+
+      const data = range.map(hour => {
+        const checkDate = setSeconds(setMinutes(setHours(date, hour), 0), 0);
+
+        const compareDate = utcToZonedTime(checkDate, timeZone);
 
         return {
           time: `${hour}:00h`,
-          past:isBefore(compareDate, new Date()),
-          appointment: response.data.find(a=> isEqual(parseISO(a.date), compareDate) )
-        }
+          past: isBefore(compareDate, new Date()),
+          appointment: response.data.find(a => {
+            return isEqual(getHours(compareDate), getHours(parseISO(a.date)));
+          }),
+        };
       });
+
       setSchedule(data);
     }
     loadSchedule();
-  },[date])
+  }, [date]);
 
   function handlePrevDay() {
     setDate(subDays(date, 1));
@@ -61,9 +77,11 @@ export default function Dashboard() {
 
       <ul>
         {schedule.map(time => (
-          <Time  key={time.time} past={time.past} available={!time.appointment}>
+          <Time key={time.time} past={time.past} available={!time.appointment}>
             <strong>{time.time}</strong>
-            <span>{time.appointment? time.appointment.user.name:'Em aberto'}</span>
+            <span>
+              {time.appointment ? time.appointment.user.name : 'Em aberto'}
+            </span>
           </Time>
         ))}
       </ul>
