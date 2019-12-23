@@ -6,24 +6,24 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  header{
+  header {
     display: flex;
     align-self: center;
-    align-items:center;
+    align-items: center;
 
-    button{
-      border:0;
+    button {
+      border: 0;
       background: none;
     }
 
-    strong{
+    strong {
       color: #fff;
       font-size: 24px;
       margin: 0 15px;
     }
   }
 
-  ul{
+  ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
@@ -31,26 +31,23 @@ export const Container = styled.div`
   }
 `;
 
-export const Time= styled.li`
-
+export const Time = styled.li`
   padding: 20px;
   border-radius: 4px;
   background: #fff;
 
-  opacity: ${props => props.past ? 0.6:1};
+  opacity: ${props => (props.past ? 0.6 : 1)};
 
-  strong{
+  strong {
     display: block;
-    color:${props => props.available? '#999': '#7159c1'};
-    font-size: 20px;
-    font-weight:normal;
-
+    color: ${props => (props.available ? '#999' : '#7159c1')};
+    font-size: ${props => (props.available ? '20px' : '24px')};
+    font-weight: ${props => (props.available ? 'normal' : 'bold')};
   }
 
-  span{
-    display:block;
+  span {
+    display: block;
     margin-top: 3px;
-    color:${props => props.available? '#999': '#666'};;
-
+    color: ${props => (props.available ? '#999' : '#666')};
   }
 `;
