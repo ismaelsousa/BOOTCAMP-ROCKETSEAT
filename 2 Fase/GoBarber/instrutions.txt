@@ -1,0 +1,21 @@
+depois de instalar o docker 
+vamos criar uma imagem do postgres
+docker run --name database -e POSTGRES_PASSWORD=docker -e POSTGRES_USER=ismae -p 5432:5432 -d postgres:11
+baixar o postbird
+user: postgres
+senha: docker
+
+reiniciar o container: docker start database
+
+criar as migrations 
+yarn sequelize db:migrate
+
+--------------------------------------
+Vamos criar um redis para a parte de email com chave-valor
+
+docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
+
+----------------------------------------------------
+pegando uma hora para conseguir ver o horários disponiveis
+new Date().getTime()
+1577109919478
