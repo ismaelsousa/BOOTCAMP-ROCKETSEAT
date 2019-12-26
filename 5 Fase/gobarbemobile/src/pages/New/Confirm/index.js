@@ -10,7 +10,6 @@ import {Container, Avatar, Name, Time, SubmitButton} from './styles';
 export default function Confirm({navigation}) {
   const provider = navigation.getParam('provider');
   const time = navigation.getParam('time');
-
   const dateFormatted = useMemo(
     () => formatRelative(subHours(parseISO(time), 3), new Date(), {locale: pt}),
     [time],
