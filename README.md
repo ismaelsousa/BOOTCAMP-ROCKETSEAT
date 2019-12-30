@@ -173,3 +173,14 @@
 - Orndenação
 - Align-self, itens...
 
+## Animações com react-native [link](https://github.com/ismaelsousa/Animations-React-Native)
+
+![image](https://user-images.githubusercontent.com/28990749/71591017-796b5a00-2b09-11ea-8b97-bc9a205a60ed.png)
+
+- animação timing
+- animação spring & decay
+- Operações matemáticas
+- encadeamento
+- interpolate
+- panResponder
+
