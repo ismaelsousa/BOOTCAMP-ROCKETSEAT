@@ -101,3 +101,26 @@
 - configurando NGINX
 - usando PM2
 - CI integração contínua
+
+## Fase 7 - Testes e Deploy no ReactJS e React-Native 
+[link para o teste](https://github.com/ismaelsousa/TEST-WITH-JEST-REACT)
+
+**Deploy**
+- ReactJS(Web)
+- configurando splash screen android
+- configurando splash screen ios
+- configurando Code Push
+- configurando One Signal
+- enviando notificações push
+- configurando Appcenter
+- Distribuindo staging ios
+- Distribuindo staging android
+- Enviando alteração via CodePush
+- publicando app Android
+- publicando app ios
+
+## Fase 8 - Patterns e Recursos avançados
+[link patterns](https://github.com/ismaelsousa/PATTERNS-NODEJS)
+[link segurança](https://github.com/ismaelsousa/SEGURANCA-NODE.JS)
+
+
