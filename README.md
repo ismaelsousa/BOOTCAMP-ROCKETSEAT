@@ -45,3 +45,59 @@
 - Tratando exceções
 - Variáveis ambiente
 - FrontEnd goBarber
+
+
+## Fase 3 - React
+- importando css
+- class component
+- estado e Imutabilidade
+- Propriedade do React
+- Default props e ProTypes
+- Ciclo de vida do componente
+- Debugando React com devTools
+- Styles components
+- usando localstorage
+- Navegação de rotas
+- carregando dados da api (axios)
+- Definindo proptypes
+
+**React-Native**
+- Configurando reactotron
+- React Navigation
+- Config StatusBar
+- styled components
+
+
+## Fase 4 - Arquitetura Flux e React Hooks
+- Conceito de Redux
+- Reactotron + Redux
+- Redux Saga
+- Separando actions
+- react Toastify
+- Navegando no Saga
+
+**Hooks**
+- useState
+- useEffect
+- useMemo
+- useCallback
+- hooks com redux:  useSelect, useDispatch...
+
+## Fase 5 - À fundo no React e React-Native
+- Desenvolvimento do GoBarber WEB [link](https://github.com/ismaelsousa/GOBARBER/tree/master/FrontEndWeb)
+- Desenvolvimento do GoBarber Mobile [link](https://github.com/ismaelsousa/GOBARBER/tree/master/Mobile)
+
+## Fase 6 - Testes e Deploy no Node.js
+**Testes** [link](https://github.com/ismaelsousa/TEST-WITH-JEST-NODE)
+- configurando Jest
+- teste de criação de usuário
+- E-mail duplicado
+- criptografia da senha
+- gerando dados aleatórios 
+**Deploy**
+- configurando servidor 
+- rodando servidor
+- Dicas de SSH
+- configurando NGINX
+- usando PM2
+- CI integração contínua
