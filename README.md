@@ -158,4 +158,18 @@
 
 [link segurança](https://github.com/ismaelsousa/SEGURANCA-NODE.JS)
 
+# BÔNUS
+![image](https://user-images.githubusercontent.com/28990749/71590926-209bc180-2b09-11ea-8645-b5ccc6b85fbc.png)
+
+## FLEXBOX
+
+![image](https://user-images.githubusercontent.com/28990749/71590935-3610eb80-2b09-11ea-8097-da8447a14b5d.png)
+
+- Conceitos
+- Flex
+- Alinhamento de conteúdo
+- Redimensionamento
+- Configurando wrap de itens
+- Orndenação
+- Align-self, itens...
 
