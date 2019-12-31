@@ -26,7 +26,7 @@
 - Middlewares
 - Debugando aplicação
 
-**Desenvolvendo backend do goBarber** [Link](https://github.com/ismaelsousa/GOBARBER/tree/master/BackEnd)
+**Desenvolvendo backend do goBarber** [Link repo](https://github.com/ismaelsousa/GOBARBER/tree/master/BackEnd)
 
 ![image](https://user-images.githubusercontent.com/28990749/71590761-79b72580-2b08-11ea-8ebc-1d6fc9a9eed3.png)
 
@@ -105,8 +105,8 @@
 ![image](https://user-images.githubusercontent.com/28990749/71590829-b3882c00-2b08-11ea-980b-3adca91deb82.png)
 
 
-- Desenvolvimento do GoBarber WEB [link](https://github.com/ismaelsousa/GOBARBER/tree/master/FrontEndWeb)
-- Desenvolvimento do GoBarber Mobile [link](https://github.com/ismaelsousa/GOBARBER/tree/master/Mobile)
+- Desenvolvimento do GoBarber WEB [link repo](https://github.com/ismaelsousa/GOBARBER/tree/master/FrontEndWeb)
+- Desenvolvimento do GoBarber Mobile [link repo](https://github.com/ismaelsousa/GOBARBER/tree/master/Mobile)
 
 ## Fase 6 - Testes e Deploy no Node.js
 
@@ -114,7 +114,7 @@
 ![image](https://user-images.githubusercontent.com/28990749/71590852-c8fd5600-2b08-11ea-99fb-cb62b75ab077.png)
 
 
-**Testes** [link](https://github.com/ismaelsousa/TEST-WITH-JEST-NODE)
+**Testes** [link repo](https://github.com/ismaelsousa/TEST-WITH-JEST-NODE)
 - configurando Jest
 - teste de criação de usuário
 - E-mail duplicado
@@ -134,7 +134,7 @@
 ![image](https://user-images.githubusercontent.com/28990749/71590865-d7e40880-2b08-11ea-82f7-997c05b907ec.png)
 
 
-[link para o teste](https://github.com/ismaelsousa/TEST-WITH-JEST-REACT)
+[link repo](https://github.com/ismaelsousa/TEST-WITH-JEST-REACT)
 
 **Deploy**
 - ReactJS(Web)
@@ -154,9 +154,9 @@
 ![image](https://user-images.githubusercontent.com/28990749/71590873-df0b1680-2b08-11ea-8af1-dfc6a04a8130.png)
 ![image](https://user-images.githubusercontent.com/28990749/71590878-e4686100-2b08-11ea-889a-1aec28a1381a.png)
 
-[link patterns](https://github.com/ismaelsousa/PATTERNS-NODEJS)
+[link repo patterns](https://github.com/ismaelsousa/PATTERNS-NODEJS)
 
-[link segurança](https://github.com/ismaelsousa/SEGURANCA-NODE.JS)
+[link repo segurança](https://github.com/ismaelsousa/SEGURANCA-NODE.JS)
 
 # BÔNUS
 ![image](https://user-images.githubusercontent.com/28990749/71590926-209bc180-2b09-11ea-8645-b5ccc6b85fbc.png)
@@ -173,13 +173,13 @@
 - Orndenação
 - Align-self, itens...
 
-## NEXTJS [link](https://github.com/ismaelsousa/NEXTJS)
+## NEXTJS [link repo](https://github.com/ismaelsousa/NEXTJS)
 
 <img src="https://user-images.githubusercontent.com/28990749/71623359-be02fe00-2bba-11ea-9168-78141e99d345.png" width="100" title="image">
 
 
 
-## Animações com react-native [link](https://github.com/ismaelsousa/Animations-React-Native)
+## Animações com react-native [link repo](https://github.com/ismaelsousa/Animations-React-Native)
 
 ![image](https://user-images.githubusercontent.com/28990749/71591017-796b5a00-2b09-11ea-8b97-bc9a205a60ed.png)
 
