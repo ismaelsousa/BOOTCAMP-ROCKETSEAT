@@ -175,7 +175,8 @@
 
 ## NEXTJS [link](https://github.com/ismaelsousa/NEXTJS)
 
-![image](https://user-images.githubusercontent.com/28990749/71623359-be02fe00-2bba-11ea-9168-78141e99d345.png)
+<img src="https://user-images.githubusercontent.com/28990749/71623359-be02fe00-2bba-11ea-9168-78141e99d345.png" width="100" title="image">
+
 
 
 ## Animações com react-native [link](https://github.com/ismaelsousa/Animations-React-Native)
