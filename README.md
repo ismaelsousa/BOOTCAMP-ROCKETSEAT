@@ -173,6 +173,11 @@
 - Orndenação
 - Align-self, itens...
 
+## NEXTJS [link](https://github.com/ismaelsousa/NEXTJS)
+
+![image](https://user-images.githubusercontent.com/28990749/71623359-be02fe00-2bba-11ea-9168-78141e99d345.png)
+
+
 ## Animações com react-native [link](https://github.com/ismaelsousa/Animations-React-Native)
 
 ![image](https://user-images.githubusercontent.com/28990749/71591017-796b5a00-2b09-11ea-8b97-bc9a205a60ed.png)
